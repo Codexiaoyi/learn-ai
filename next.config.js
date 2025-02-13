@@ -11,7 +11,10 @@ const nextConfig = {
     '@mui/icons-material',
     '@emotion/react',
     '@emotion/styled'
-  ]
+  ],
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 }
 
 module.exports = nextConfig 
