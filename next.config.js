@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  reactStrictMode: true,
+  swcMinify: true,
   transpilePackages: [
     '@ant-design/icons',
     '@ant-design/cssinjs',
