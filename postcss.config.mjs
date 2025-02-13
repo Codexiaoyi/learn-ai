@@ -1,7 +1,6 @@
-module.exports = {
-  plugins: [
-    'tailwindcss',  // 确保这里引用的是 tailwindcss 而不是 @tailwindcss/postcss
-    'autoprefixer',
-    '@tailwindcss/postcss',  // 引入 @tailwindcss/postcss 插件
-  ],
+import tailwindcss from 'tailwindcss';
+import autoprefixer from 'autoprefixer';
+
+export default {
+  plugins: [tailwindcss(), autoprefixer()],
 };
